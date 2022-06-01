@@ -7,11 +7,11 @@ class Landing extends Component {
 
   render() {
     return(
-      <div class="splash-container">
-        <div class="splash">
-            <h1 class="splash-head">Welcome to Rideshare</h1>
-            <p class="splash-subhead">
-                
+      <div className="splash-container">
+        <div className="splash">
+            <h1 className="splash-head">Welcome to Rideshare</h1>
+            <p className="splash-subhead">
+                Look for Rides around the World, and pay with your favorite Cryptocurreny <strong>"Ethereum"</strong>
             </p>
         </div>
       </div>
