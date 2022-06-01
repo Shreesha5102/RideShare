@@ -51,7 +51,7 @@ code {
 .navbar {
   position: fixed;
   padding: 5px;
-  background: #1787c7;
+  background: #0bbfcc;
   font-family: 'Oswald', 'Arial Narrow', sans-serif;
 }
 
@@ -62,7 +62,7 @@ code {
 .navbar a:active,
 .navbar a:focus,
 .navbar a:hover {
-  background: #233e5e;
+  background: #056969;
 }
 
 .navbar .pure-menu-heading {
@@ -82,7 +82,7 @@ code {
 
  .splash-container {
   /* background: #f3f3f4; */
-  background-image: url("./img/txt3.jpg");
+  background-image: url("./img/txt7.jpeg");
   background-repeat: no-repeat;
   background-size: cover;
   z-index: -1;
@@ -97,7 +97,7 @@ code {
 .splash {
   /* absolute center .splash within .splash-container */
   width: 50%;
-  height: 50%;
+  height: 77%;
   margin: auto;
   position: fixed;
   top: 10px; left: 0; bottom: 0; right: 0;
@@ -125,21 +125,44 @@ code {
   opacity: 1;
 }
 
-.pure-u-1-1 {
-  color: rgb(33, 67, 218);
-  border: 3px solid rgb(65, 7, 247);
+.signup{
+  color: rgb(46, 194, 194);
+  border: 3px solid rgb(212, 43, 228);
   /* border-top: -100px; */
   border: auto;
   width: 400px;
   height: 350px;
   padding-left: 550px;
   margin:auto;
+  background-color:rgb(245, 228, 238) ;
   background-image: url("./img/txt6.jpeg");
   background-repeat: no-repeat;
   background-size: 500px 350px ;
   /* margin-top:center;
   margin-left: 150px;
   margin-bottom: -100px; */
+}
+/* .container1{
+  box-sizing: border-box; 
+  width: 100%;
+  height: 100%;
+  padding: 45px 20px; 
+  background-color: rgb(224, 192, 205);
+
+} */
+
+.fill-window {
+  z-index: -1;
+  height: 100%;
+  position: fixed;
+  left: 0;
+  width: 100%;
+  overflow: hidden;
+  padding: 100px 20px; 
+  /* background-color: rgb(185, 197,203); */
+  background-image:url("./img/txt11.jpeg") ;
+  background-repeat: no-repeat;
+  background-size: cover;
 }
 
 
