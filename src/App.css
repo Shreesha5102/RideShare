@@ -49,7 +49,7 @@ code {
 .navbar {
   position: fixed;
   padding: 5px;
-  background: #0c1a2b;
+  background: #1787c7;
   font-family: 'Oswald', 'Arial Narrow', sans-serif;
 }
 
@@ -76,3 +76,50 @@ code {
   height: 16px;
   margin-right: 10px;
 }
+
+
+ .splash-container {
+  /* background: #f3f3f4; */
+  background-image: url("./img/txt3.jpg");
+  background-repeat: no-repeat;
+  background-size: cover;
+  z-index: -1;
+  overflow: hidden;
+  /* The following styles are required for the "scroll-over" effect */
+  width: 100%;
+  height: 100%;
+  top: 0;
+  left: 0;
+  position:fixed !important;
+}
+.splash {
+  /* absolute center .splash within .splash-container */
+  width: 50%;
+  height: 50%;
+  margin: auto;
+  position: fixed;
+  top: 10px; left: 0; bottom: 0; right: 0;
+  text-align: center;
+  text-transform: uppercase;
+}
+
+/* This is the main heading that appears on the blue section */
+.splash-head {
+  font-family:'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+  font-size: 30px;
+  font-weight: bold;
+  color: rgb(0, 132, 241);
+  border: 3px solid rgb(123, 7, 247);
+  padding: 1em 1.6em;
+  font-weight: 100;
+  border-radius: 8px;
+  line-height: 2em;
+}
+
+/* This is the subheading that appears on the blue section */
+.splash-subhead {
+  color: rgb(33, 67, 218);
+  letter-spacing: 0.05em;
+  opacity: 1;
+}
+
