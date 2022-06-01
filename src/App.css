@@ -27,9 +27,11 @@ code {
 }
 
 .container {
-  box-sizing: border-box;
+   box-sizing: border-box; 
   width: 100%;
-  padding: 45px 20px;
+  height: 100%;
+  padding: 45px 20px; 
+  background-color: rgb(224, 192, 205);
 }
 
 .pure-button-primary {
@@ -122,4 +124,22 @@ code {
   letter-spacing: 0.05em;
   opacity: 1;
 }
+
+.pure-u-1-1 {
+  color: rgb(33, 67, 218);
+  border: 3px solid rgb(65, 7, 247);
+  /* border-top: -100px; */
+  border: auto;
+  width: 400px;
+  height: 350px;
+  padding-left: 550px;
+  margin:auto;
+  background-image: url("./img/txt6.jpeg");
+  background-repeat: no-repeat;
+  background-size: 500px 350px ;
+  /* margin-top:center;
+  margin-left: 150px;
+  margin-bottom: -100px; */
+}
+
 
