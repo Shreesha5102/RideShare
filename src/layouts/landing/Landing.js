@@ -7,19 +7,14 @@ class Landing extends Component {
 
   render() {
     return(
-      <main className="container">
-        <div className="pure-g">
-          <div className="pure-u-1-1">
-            <h1>Welcome to BMSCE RideShare</h1>
-            <h3>
-              <p>
-                Developed by Shreesha Bhat, Shashank J V, Swaroop Kumar A <br></br>
-                Under the guidance of Dr. Sandeep Varma N
-              </p>
-            </h3>         
-          </div>
+      <div class="splash-container">
+        <div class="splash">
+            <h1 class="splash-head">Welcome to Rideshare</h1>
+            <p class="splash-subhead">
+                
+            </p>
         </div>
-      </main>
+      </div>
     )
   }
 }

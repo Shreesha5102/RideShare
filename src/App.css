@@ -16,6 +16,10 @@ code {
   background: #eee;
 }
 
+.header {
+  text-align: center;
+}
+
 .container {
   box-sizing: border-box;
   width: 100%;

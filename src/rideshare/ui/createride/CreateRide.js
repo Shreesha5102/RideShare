@@ -1,4 +1,5 @@
-import React, { Component } from 'react'
+import React, { Component } from 'react';
+import {MapComponent} from '../googlemaps/maps.js';
 
 class CreateRide extends Component {
   constructor(props) {
@@ -45,32 +46,45 @@ class CreateRide extends Component {
   }
 
   render() {
+
     return(
-      <form className="pure-form pure-form-stacked" onSubmit={this.handleSubmit.bind(this)}>
-        <fieldset>
-          <label htmlFor="name">Expected Payment</label>
-          <input id="expected_payment" type="text" value={this.state.expected_payment} onChange={this.onExpectedPaymentChange.bind(this)} placeholder="Expected Payment" />
+      <div class="container-fluid">
+        <div class="row">
+          <div class="col">
+            <form className="pure-form pure-form-stacked" onSubmit={this.handleSubmit.bind(this)}>
+            <fieldset>
+              <label htmlFor="name">Expected Payment</label>
+              <input id="expected_payment" type="text" value={this.state.expected_payment} onChange={this.onExpectedPaymentChange.bind(this)} placeholder="Expected Payment" />
 
-          <label htmlFor="name">Capacity</label>
-          <input id="capacity" type="text" value={this.state.capacity} onChange={this.onCapacityChange.bind(this)} placeholder="Capacity" />
+              <label htmlFor="name">Capacity</label>
+              <input id="capacity" type="text" value={this.state.capacity} onChange={this.onCapacityChange.bind(this)} placeholder="Capacity" />
 
-          <label htmlFor="name">Origin Address</label>
-          <input id="origin_address" type="text" value={this.state.origin_address} onChange={this.onOriginAddressChange.bind(this)} placeholder="Origin Address" />
+              <label htmlFor="name">Origin Address</label>
+              <input id="origin_address" type="text" value={this.state.origin_address} onChange={this.onOriginAddressChange.bind(this)} placeholder="Origin Address" />
 
-          <label htmlFor="name">Destination Address</label>
-          <input id="destination_address" type="text" value={this.state.destination_address} onChange={this.onDestinationAddressChange.bind(this)} placeholder="Destination Address" />
+              <label htmlFor="name">Destination Address</label>
+              <input id="destination_address" type="text" value={this.state.destination_address} onChange={this.onDestinationAddressChange.bind(this)} placeholder="Destination Address" />
 
-          <label htmlFor="name">Needs to be confirmed by:</label>
-          <input id="confirmed_at" type="text" value={this.state.confirmed_at} onChange={this.onConfirmedAtChange.bind(this)} placeholder="Confirmed At" />
+              <label htmlFor="name">Needs to be confirmed by:</label>
+              <input id="confirmed_at" type="text" value={this.state.confirmed_at} onChange={this.onConfirmedAtChange.bind(this)} placeholder="Confirmed At" />
 
-          <label htmlFor="name">Depart at:</label>
-          <input id="depart_at" type="text" value={this.state.depart_at} onChange={this.onDepartAtChange.bind(this)} placeholder="Depart At" />
+              <label htmlFor="name">Depart at:</label>
+              <input id="depart_at" type="text" value={this.state.depart_at} onChange={this.onDepartAtChange.bind(this)} placeholder="Depart At" />
 
-          <br />
+              <br />
 
-          <button type="submit" className="pure-button pure-button-primary">Create Rideshare</button>
-        </fieldset>
-      </form>
+              <button type="submit" className="pure-button pure-button-primary">Create Rideshare</button>
+            </fieldset>
+            </form>
+          </div>
+          <div class="col">
+            <div id="map">
+              <MapComponent/>
+            </div>
+          </div>
+        </div>
+        
+      </div>
     )
   }
 }
