@@ -76,3 +76,21 @@ code {
   height: 16px;
   margin-right: 10px;
 }
+
+/* Driver */
+.driver{
+  align-items: center;
+  padding: 2%;
+}
+
+.driverForm {
+  align-items: center;
+  border: 2px solid #233e5e;
+  border-radius: 2%;
+  flex-direction: column;
+  padding: 3%;
+}
+
+#dForm{
+  align-content: center;
+}
