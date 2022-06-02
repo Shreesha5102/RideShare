@@ -53,7 +53,7 @@ class CreateRide extends Component {
           <div className="pure-u-1-3"></div>
           <div className="pure-u-1-3">
           <form id="ride-form" onSubmit={this.handleSubmit.bind(this)}>
-            <fieldset disabled>
+            <fieldset>
               <legend style={{"text-align":"center"}}>Create Ride</legend>
               <div class="mb-3">
                 <label for="payment" className="form-label">Expected Payment</label>

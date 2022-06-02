@@ -7,19 +7,32 @@ class Landing extends Component {
 
   render() {
     return(
-     
-      <div className="splash-container">
-        <div className="splash">
-            <h1 className="splash-head">Welcome to Rideshare</h1>
-            <p className="splash-subhead">
-                Look for Rides around the World, and pay with your favorite Cryptocurreny <strong>"Ethereum"</strong>
+      <div className='container fluid'>
+        <div className='row'>
+          <div className="jumbotron text-center">
+                <h1>Welcome to Rideshare</h1>
+                <p className="splash-subhead">
+                    Look for Rides around the World, and pay with your favorite Cryptocurreny <strong>"Ethereum"</strong>
+                </p>
+                <p>
+                <a href="/dashboard" className="btn btn-primary">login</a>
+                <a href="/signup" className="btn btn-primary">signup</a>
             </p>
-            <p>
-            <a href="/dashboard" className="pure-button pure-button-primary">login</a>
-            <a href="/signup" className="pure-button pure-button-primary">signup</a>
-        </p>
+          </div>
         </div>
-      </div>
+        <div className='row'>
+          <div class="col-sm-8">
+            <h2>About Company Page</h2><br></br>
+            <h4>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.</h4><br></br>
+            <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.</p>
+            <br></br><button class="btn btn-default btn-lg">Get in Touch</button>
+          </div>
+          <div class="col-sm-4">
+            <span class="glyphicon glyphicon-signal logo"></span>
+          </div>
+        </div>
+    </div>
+      
       
     )
   }

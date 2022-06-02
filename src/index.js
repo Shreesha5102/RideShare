@@ -33,6 +33,7 @@ getWeb3
 })
 
 ReactDOM.render((
+  <div className='container-fluid'>
     <Provider store={store}>
       <Router history={history}>
         <Route path="/" component={App}>
@@ -47,6 +48,8 @@ ReactDOM.render((
         </Route>
       </Router>
     </Provider>
+  </div>
+    
   ),
   document.getElementById('root')
 )
