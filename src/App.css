@@ -74,6 +74,7 @@ code {
 }
 
 .pure-button-primary {
+  margin: 2%;
   background-color: #0c1a2b;
 }
 
@@ -118,12 +119,6 @@ code {
   margin-right: 10px;
 }
 
-<<<<<<< HEAD
-/* Driver */
-.driver{
-  align-items: center;
-  padding: 2%;
-=======
 
  .splash-container {
   /* background: #f3f3f4; */
@@ -148,7 +143,6 @@ code {
   top: 10px; left: 0; bottom: 0; right: 0;
   text-align: center;
   text-transform: uppercase;
->>>>>>> fdc82fb84a4d4e4677feb7a27fbe0e0a02d91b93
 }
 
 .driverForm {
@@ -159,11 +153,9 @@ code {
   padding: 3%;
 }
 
-#dForm{
-  align-content: center;
+#dForm div{
+  margin-left: 13%;
 }
-<<<<<<< HEAD
-=======
 
 .signup{
   color: rgb(46, 194, 194);
@@ -206,4 +198,3 @@ code {
 }
 
 
->>>>>>> fdc82fb84a4d4e4677feb7a27fbe0e0a02d91b93

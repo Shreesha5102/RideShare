@@ -15,9 +15,8 @@ class Landing extends Component {
                 Look for Rides around the World, and pay with your favorite Cryptocurreny <strong>"Ethereum"</strong>
             </p>
             <p>
-            <a href="http://purecss.io" className="pure-button pure-button-primary">login</a>
-        
-            {/* <a href="http://purecss.io" className="pure-button pure-button-primary">signup</a> */}
+            <a href="/dashboard" className="pure-button pure-button-primary">login</a>
+            <a href="/signup" className="pure-button pure-button-primary">signup</a>
         </p>
         </div>
       </div>
