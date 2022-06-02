@@ -15,44 +15,47 @@ import './App.css'
 class App extends Component {
   render() {
     const OnlyAuthLinks = VisibleOnlyAuth(() =>
-      <span>
-        <li className="pure-menu-item">
-          <Link to="/dashboard" className="pure-menu-link">Dashboard</Link>
+      <ul className="navbar-nav">
+        <li className="nav-item">
+          <a href="/dashboard" className="nav-link">Dashboard</a>
         </li>
-        <li className="pure-menu-item">
-          <Link to="/profile" className="pure-menu-link">Profile</Link>
+        <li className="nav-item">
+          <a href="/profile" className="nav-link">Profile</a>
         </li>
-        <li className="pure-menu-item">
-          <Link to="/driver" className="pure-menu-link">Drive</Link>
+        <li className="nav-item">
+          <a href="/driver" className="nav-link">Drive</a>
         </li>
         <LogoutButtonContainer />
-      </span>
+      </ul>
     )
 
     const OnlyGuestLinks = HiddenOnlyAuth(() =>
-      <span>
-        <li className="pure-menu-item">
-          <Link to="/signup" className="pure-menu-link">Sign Up</Link>
+      <ul className="navbar-nav">
+        <li className="nav-item">
+          <a href="/signup" className="nav-link">Sign Up</a>
         </li>
         <LoginButtonContainer />
-      </span>
+      </ul>
     )
 
     return (
       <div className="App">
-        <nav className="navbar pure-menu pure-menu-horizontal">
-        <Link to="/" className="pure-menu-heading pure-menu-link">BMSCE RS</Link>
-          <ul className="pure-menu-list navbar-right">
-            <OnlyGuestLinks />
-            <OnlyAuthLinks />
-          </ul>
-          
+        <nav className="navbar navbar-expand-lg navbar-fixed-top">
+          <div className="container-fluid">
+            <a className="navbar-brand" href="/">BMSCE RS</a>
+            <button className="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+              <span className="navbar-toggler-icon"></span>
+            </button>
+            <div className="collapse navbar-collapse" id="navbarNav">
+              <OnlyGuestLinks />
+              <OnlyAuthLinks />
+            </div>  
+          </div>       
         </nav>
-
         {this.props.children}
       </div>
     );
   }
 }
 
-export default App
+export default App;
