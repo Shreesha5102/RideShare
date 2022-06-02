@@ -5,11 +5,10 @@ import CreateRideContainer from '../../rideshare/ui/createride/CreateRideContain
 class Driver extends Component {
   render() {
     return(
-      <main className="container">
+      <main className="fill-window">
         <div className="pure-g">
           <div className="pure-u-1-1">
-            <h1>Driver</h1>
-            <p>Form here</p>
+            <h1 style={{"text-align":"center"}}>Driver</h1>
             <div>
               <CreateRideContainer/>
             </div>

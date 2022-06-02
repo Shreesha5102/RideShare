@@ -11,7 +11,7 @@ class JoinRide extends Component {
 
   render() {
     return(
-      <button onClick={this.handleSubmit.bind(this)}>Confirm Passenger</button>
+      <button className="btn btn-primary" onClick={this.handleSubmit.bind(this)}>Confirm Passenger</button>
     )
   }
 }

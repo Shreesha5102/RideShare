@@ -87,7 +87,7 @@ class RideList extends Component {
     console.log(this.state.passengers);
     if (condition) {
       return (
-        <span>Ride Picked Up</span>
+        <button className='btn btn-primary' disabled>Ride Picked Up</button>
       )
     } else {
       return (
@@ -105,21 +105,95 @@ class RideList extends Component {
       )
     } else {
       return(
-        <main className="container">
-          <div className="pure-g">
-            <div className="pure-u-1-1">
-              {this.state.rideshares.map((ride, i) => {
-                console.log(ride);
-                return (
-                  <p>Account Address:{ride[0]}<br></br>Cost of Ride:{web3.fromWei(ride[1], "ether" ).toNumber()}<br></br>Capacity: {ride[2]["c"][0]}<br></br>From: {ride[3]}<br></br>To: {ride[4]}<br></br>
-                  {this.rideshareButton(this.state.passengers[i].indexOf(web3.eth.accounts[0]) > -1, ride[1],i)}
-                  <br></br><Link to={`/details/${i}`}>Passenger Page</Link>
-                  </p>
-                )
-              })}
+        <div className="container fluid">
+          <div className="row">
+            <div className="col">
+              <p>
+                <h2>Current Ride</h2>
+                <div className='row'>
+                  <div className='col'>
+                    <ul className="list-group">
+                      <li className="list-group-item d-flex justify-content-between align-items-start">
+                        <div className="ms-2 me-auto">
+                          <div className="fw-bold">Account Address</div>
+                          {this.state.rideshares.at(-1)[0]}
+                        </div>
+                      </li>
+                      <li className="list-group-item d-flex justify-content-between align-items-start">
+                        <div className="ms-2 me-auto">
+                          <div className="fw-bold">Cost</div>
+                          {web3.fromWei(this.state.rideshares.at(-1)[1], "ether" ).toNumber()}
+                        </div>
+                      </li>
+                      <li className="list-group-item d-flex justify-content-between align-items-start">
+                        <div className="ms-2 me-auto">
+                          <div className="fw-bold">Capacity</div>
+                          {this.state.rideshares.at(-1)[2]["c"][0]}
+                        </div>
+                      </li>
+                      <li className="list-group-item d-flex justify-content-between align-items-start">
+                        <div className="ms-2 me-auto">
+                          <div className="fw-bold">From</div>
+                          {this.state.rideshares.at(-1)[3]}
+                        </div>
+                      </li>
+                      <li className="list-group-item d-flex justify-content-between align-items-start">
+                        <div className="ms-2 me-auto">
+                          <div className="fw-bold">To</div>
+                          {this.state.rideshares.at(-1)[4]}
+                        </div>
+                      </li>
+                      <li className="list-group-item d-flex justify-content-between align-items-start">
+                        <div className="ms-2 me-auto">
+                          <div className="fw-bold"></div>
+                          {this.rideshareButton(this.state.passengers[this.state.passengers.length-1].indexOf(web3.eth.accounts[0]) > -1, this.state.rideshares.at(-1)[1],this.state.rideshares.length-1)}
+                        </div>
+                      </li>
+                    </ul>
+                  </div>
+                </div>
+              </p>
             </div>
           </div>
-        </main>
+          <div className='row'>
+            <div className='col'>
+              <div className="row">
+                <div className='col'>
+                  <h3>History</h3>
+                </div>
+              </div>
+              <table className="table table-striped table-hover">
+                <thead>
+                  <tr>
+                    <th scope="col">#</th>
+                    <th scope="col">Account Address</th>
+                    <th scope="col">Cost</th>
+                    <th scope="col">Capacity</th>
+                    <th scope="col">From</th>
+                    <th scope="col">To</th>
+                  </tr>
+                </thead>
+                <tbody>
+                  {
+                    this.state.rideshares.map((ride, i) => {
+                      return(
+                        <tr>
+                        <td>{i}</td>
+                        <td>{ride[0]}</td>
+                        <td>{web3.fromWei(ride[1], "ether" ).toNumber()}</td>
+                        <td>{ride[2]["c"][0]}</td>
+                        <td>{ride[3]}</td>
+                        <td>{ride[4]}</td>
+                        {/* <td>{this.rideshareButton(this.state.passengers[i].indexOf(web3.eth.accounts[0]) > -1, ride[1],i)}</td> */}
+                      </tr>
+                      )
+                    })
+                  }
+                </tbody>
+              </table>
+            </div>
+          </div>
+        </div>
       )
     }
   }

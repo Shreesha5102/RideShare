@@ -48,38 +48,40 @@ class CreateRide extends Component {
   render() {
 
     return(
-      <div className="container">
+      <div className="ride-container">
         <div className="pure-g driver">
           <div className="pure-u-1-3"></div>
           <div className="pure-u-1-3">
-          <form onSubmit={this.handleSubmit.bind(this)}>
+          <form id="ride-form" onSubmit={this.handleSubmit.bind(this)}>
             <fieldset disabled>
-              <legend>Create Ride Information</legend>
+              <legend style={{"text-align":"center"}}>Create Ride</legend>
               <div class="mb-3">
                 <label for="payment" className="form-label">Expected Payment</label>
                 <input id="expected_payment" className="form-control" type="text" value={this.state.expected_payment} onChange={this.onExpectedPaymentChange.bind(this)} placeholder="Expected Payment" />
               </div>
               <div class="mb-3">
                 <label for="capacity" className="form-label">Capacity</label>
-                <input id="capacity" type="text" value={this.state.capacity} onChange={this.onCapacityChange.bind(this)} placeholder="Capacity" />          
+                <input id="capacity" type="text" className="form-control" value={this.state.capacity} onChange={this.onCapacityChange.bind(this)} placeholder="Capacity" />          
               </div>
               <div className='mb-3'>
                   <label for="Oadd" className="form-label">Origin Address</label>
-                  <input id="origin_address" type="text" value={this.state.origin_address} onChange={this.onOriginAddressChange.bind(this)} placeholder="Origin Address" />
+                  <input id="origin_address" className="form-control" type="text" value={this.state.origin_address} onChange={this.onOriginAddressChange.bind(this)} placeholder="Origin Address" />
                 </div>
                 <div className='mb-3'>
                   <label for="Dadd" className="form-label">Destination Address</label>
-                  <input id="destination_address" type="text" value={this.state.destination_address} onChange={this.onDestinationAddressChange.bind(this)} placeholder="Destination Address" />
+                  <input id="destination_address" className="form-control" type="text" value={this.state.destination_address} onChange={this.onDestinationAddressChange.bind(this)} placeholder="Destination Address" />
                 </div>
                 <div className='mb-3'>
                   <label for="Ctime" className="form-label">Needs to be confirmed by:</label>
-                  <input id="confirmed_at" type="text" value={this.state.confirmed_at} onChange={this.onConfirmedAtChange.bind(this)} placeholder="Confirmed At" />
+                  <input id="confirmed_at" type="text" className="form-control" value={this.state.confirmed_at} onChange={this.onConfirmedAtChange.bind(this)} placeholder="Confirmed At" />
                 </div>
-                  <div className='mb-3'>
+                <div className='mb-3'>
                   <label for="Dtime" className="form-label">Depart at:</label>
-                <input id="depart_at" type="text" value={this.state.depart_at} onChange={this.onDepartAtChange.bind(this)} placeholder="Depart At" />
+                  <input id="depart_at" type="text" className="form-control" value={this.state.depart_at} onChange={this.onDepartAtChange.bind(this)} placeholder="Depart At" />
                 </div>
-              <button type="submit" class="btn btn-primary">Submit</button>
+                <div className='mb-3'>
+                  <button type="submit" className="btn btn-primary">Submit</button>
+                </div>
             </fieldset>
           </form>
             {/* <form className="pure-form pure-form-stacked driverForm" onSubmit={this.handleSubmit.bind(this)}>

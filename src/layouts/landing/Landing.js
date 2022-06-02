@@ -19,7 +19,6 @@ class Landing extends Component {
             <a href="/signup" className="pure-button pure-button-primary">signup</a>
         </p>
         </div>
-        
       </div>
       
     )
