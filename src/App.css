@@ -91,7 +91,7 @@ code {
 .navbar {
   position: fixed;
   padding: 5px;
-  background: #0bbfcc;
+  background: #760676;
   font-family: 'Oswald', 'Arial Narrow', sans-serif;
 }
 
@@ -162,14 +162,14 @@ code {
   border: 3px solid rgb(212, 43, 228);
   /* border-top: -100px; */
   border: auto;
-  width: 400px;
-  height: 350px;
-  padding-left: 550px;
+  width: 700px;
+  height: 380px;
+  padding-left: 420px;
   margin:auto;
   background-color:rgb(245, 228, 238) ;
   background-image: url("./img/txt6.jpeg");
   background-repeat: no-repeat;
-  background-size: 500px 350px ;
+  background-size: 400px 380px ;
   /* margin-top:center;
   margin-left: 150px;
   margin-bottom: -100px; */
@@ -190,11 +190,10 @@ code {
   left: 0;
   width: 100%;
   overflow: hidden;
-  padding: 100px 20px; 
-  /* background-color: rgb(185, 197,203); */
-  background-image:url("./img/txt11.jpeg") ;
+  padding: 150px 20px; 
+   /* background-color: rgb(75, 3, 75); */
+  background-image:url("./img/txt15.jpeg") ; 
   background-repeat: no-repeat;
   background-size: cover;
 }
-
 
