@@ -4,7 +4,7 @@ import SignUpFormContainer from '../../ui/signupform/SignUpFormContainer'
 class SignUp extends Component {
   render() {
     return(
-      <main className="fill-window">
+      <div className="fill-window">
         <div className="pure-g">
           <div className="pure-u-1-1">
             <div className= "signup">
@@ -14,7 +14,7 @@ class SignUp extends Component {
             </div>
           </div>
         </div>
-      </main>
+      </div>
     )
   }
 }

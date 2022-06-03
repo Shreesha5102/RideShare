@@ -1,4 +1,9 @@
-import React, { Component } from 'react'
+import React, { Component } from 'react';
+//components
+import Carousel from "./Carousel";
+
+import img1 from "../../img/txt1.jpg";
+import '../../App.css';
 
 class Landing extends Component {
   constructor(props) {
@@ -8,6 +13,9 @@ class Landing extends Component {
   render() {
     return(
       <div className='container fluid'>
+        <div className='row'>
+          <Carousel />
+        </div>
         <div className='row'>
           <div className="jumbotron text-center">
                 <h1>Welcome to Rideshare</h1>
@@ -21,16 +29,24 @@ class Landing extends Component {
           </div>
         </div>
         <div className='row'>
-          <div className="col-sm-8">
+          <div className="col-8">
             <h2>About Company Page</h2><br></br>
             <h4>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.</h4><br></br>
             <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.</p>
-            <br></br><button class="btn btn-default btn-lg">Get in Touch</button>
+            <br></br><button className="btn btn-primary btn-lg">Get in Touch</button>
           </div>
-          <div className="col-sm-4">
-            <span className="glyphicon glyphicon-signal logo"></span>
+          <div className="col-4">
+             <img src={img1} className='rounded' alt="no image"/>
           </div>
         </div>
+
+        <div className='row'>
+          <div className="about-section">
+           <h1 id="contact-us">Contact US!</h1>
+            <p>.</p>
+           <p>Resize the browser window to see that this page is responsive by the way.</p>
+          </div>
+       </div>
     </div>
       
       

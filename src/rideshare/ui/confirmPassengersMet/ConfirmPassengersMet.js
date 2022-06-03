@@ -26,17 +26,22 @@ class ConfirmPassengersMet extends Component {
 
   render() {
     return(
-      <form className="pure-form pure-form-stacked" onSubmit={this.handleSubmit.bind(this)}>
+      <form onSubmit={this.handleSubmit.bind(this)}>
         <fieldset>
-          <label htmlFor="name">GPS Location</label>
-          <input id="gps_location" type="text" value={this.state.gps_location} onChange={this.onGpsLocationChange.bind(this)} placeholder="GPS Location" />
+          <legend style={{"text-align":"center"}}>Confirm Location</legend>
+          <div className='mb-3'>
+          <label for="gps_name" className="form-label">GPS Location</label>
+          <input id="gps_location" className="form-control" type="text" value={this.state.gps_location} onChange={this.onGpsLocationChange.bind(this)} placeholder="GPS Location" />
 
-          <label htmlFor="name">Passengers</label>
-          <textarea id="passengers" type="text" value={this.state.passengers} onChange={this.onPassengersChange.bind(this)} placeholder="Passengers" />
-
-          <br />
-
-          <button type="submit" className="pure-button pure-button-primary">Confirm Passengers Met</button>
+          </div>
+          <div className='mb-3'>
+          <label for="passengers" className="form-label">Passengers</label>
+          <textarea id="passengers" className="form-control" type="text" value={this.state.passengers} onChange={this.onPassengersChange.bind(this)} placeholder="Passengers" />
+  
+          </div>
+          <div className='mb-3'>
+            <button type="submit" className="btn btn-primary">Confirm Passenger Met</button>
+          </div>
         </fieldset>
       </form>
     )

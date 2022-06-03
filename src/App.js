@@ -13,6 +13,18 @@ import './css/pure-min.css'
 import './App.css'
 
 class App extends Component {
+  constructor(props) {
+    super(props)
+
+    this.state = {
+        isNavCollapsed : true
+    }
+}
+  handleNavCollapse = ()=> {
+    this.setState(prevState => ({
+      isNavCollapsed: !prevState.isNavCollapsed
+    }));
+  }
   render() {
     const OnlyAuthLinks = VisibleOnlyAuth(() =>
       <ul className="navbar-nav">
@@ -41,12 +53,12 @@ class App extends Component {
     return (
       <div className="App">
         <nav className="navbar navbar-expand-lg navbar-fixed-top">
-          <div className="container-fluid">
-            <a className="navbar-brand" href="/">BMSCE RS</a>
-            <button className="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+          <div className="container-fluid ">
+            <a className="navbar-brand" href="#" >BMSCE RS</a>
+            <button className="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded={!this.state.isNavCollapsed ? true : false} aria-label="Toggle navigation" onClick={this.handleNavCollapse}>
               <span className="navbar-toggler-icon"></span>
             </button>
-            <div className="collapse navbar-collapse" id="navbarNav">
+            <div className={`${this.state.isNavCollapsed ? 'collapse' : ''} navbar-collapse`} id="navbarNav">
               <OnlyGuestLinks />
               <OnlyAuthLinks />
             </div>  

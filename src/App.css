@@ -32,7 +32,7 @@ code {
 /* NAVBAR */
 
 .navbar {
-  position: absolute;
+  position: relative;
   width: 100%;
   margin-bottom: 0;
   background-color: #f4511e;
@@ -44,6 +44,7 @@ code {
   border-radius: 0;
   font-family: Montserrat, sans-serif;
   flex-wrap: nowrap;
+  justify-content: space-between;
 }
 
 .navbar-expand-lg .navbar-collapse{
@@ -51,11 +52,7 @@ code {
   flex-wrap: nowrap;
 }
 
-@media (min-width: 992px){
-  .navbar-expand-lg .navbar-nav {
-    flex-wrap: nowrap ;
-  }
-}
+
 
 
 .navbar li a, .navbar .navbar-brand {
@@ -113,6 +110,7 @@ code {
 
 #main {
   padding-left: 0px;
+  padding-right: 0px;
 }
 
 .fill-window {
@@ -134,5 +132,13 @@ code {
 }
 #ride-form:hover {
   box-shadow: 5px 0px 40px rgba(0,0,0, .2);
+}
+
+#dashboard {
+  margin-top: auto;
+}
+
+.app-main {
+  margin-top: 0;
 }
 
