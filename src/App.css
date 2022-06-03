@@ -123,7 +123,7 @@ code {
   overflow: hidden;
   padding: 100px 20px; 
    /* background-color: rgb(75, 3, 75); */
-  background-image:url("./img/txt15.jpeg") ; 
+  /* background-image:url("./img/txt15.jpeg") ;  */
   background-repeat: no-repeat;
   background-size: cover;
 }
@@ -135,4 +135,24 @@ code {
 #ride-form:hover {
   box-shadow: 5px 0px 40px rgba(0,0,0, .2);
 }
+
+.about-section {
+  padding: 30px;
+  background-color: #474e5d;
+  color: white;
+}
+
+#main{
+  margin-left: 0;
+  margin-right: 0;
+  width:100%;
+  max-width: none;
+ 
+}
+#contact-us{
+  text-align: center;
+}
+
+ 
+
 
