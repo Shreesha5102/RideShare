@@ -99,12 +99,12 @@ code {
 }
 
 .container{
-  margin-left: 0px;
-  margin-right: 0px !important;
+  margin-left: 0px; 
+   margin-right: 0px;
   width: 100%;
   max-width:none;
   height: 100%;
-  background-color: rgb(224, 192, 205);
+  background-color: rgb(245, 240, 240);
 
 }
 
@@ -121,7 +121,7 @@ code {
   overflow: hidden;
   padding: 100px 20px; 
    /* background-color: rgb(75, 3, 75); */
-  background-image:url("./img/txt15.jpeg") ; 
+  /* background-image:url("./img/txt15.jpeg") ;  */
   background-repeat: no-repeat;
   background-size: cover;
 }
@@ -134,6 +134,7 @@ code {
   box-shadow: 5px 0px 40px rgba(0,0,0, .2);
 }
 
+<<<<<<< HEAD
 #dashboard {
   margin-top: auto;
 }
@@ -142,3 +143,44 @@ code {
   margin-top: 0;
 }
 
+=======
+.about-section {
+  padding: 30px;
+  background-color: #474e5d;
+  color: white;
+}
+
+#main{
+  margin-left: 0;
+  margin-right: 0;
+  width:100%;
+  max-width: none;
+ 
+}
+#contact-us{
+  text-align: center;
+}
+.row1{
+  background-image: url('./img/txt11.jpeg');
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+
+.page-section {
+  padding: 6rem 0;
+}
+.page-section h2.section-heading, .page-section .section-heading.h2 {
+  font-size: 2.5rem;
+  margin-top: 0;
+  margin-bottom: 1rem;
+}
+.page-section h3.section-subheading, .page-section .section-subheading.h3 {
+  font-size: 1rem;
+  font-weight: 400;
+  font-style: italic;
+  font-family: "Roboto Slab", -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, "Helvetica Neue", Arial, sans-serif, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol", "Noto Color Emoji";
+  margin-bottom: 4rem;
+}
+
+
+>>>>>>> 7ddbb677573cfa899eebc3e88413b5a030198162
