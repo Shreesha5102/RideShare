@@ -9,14 +9,12 @@ class Dashboard extends Component {
 
   render() {
     return(
-      <main className="container">
-        <div className="pure-g">
-          <div className="pure-u-1-1">
-            <h1>Dashboard</h1>
+      <div id="dashboard" className="container fluid">
+        <div className="row">
+            <h1 style={{"textAlign":"center"}}>Dashboard</h1>
             <RideList/>
-          </div>
         </div>
-      </main>
+      </div>
     )
   }
 }

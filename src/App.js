@@ -13,6 +13,18 @@ import './css/pure-min.css'
 import './App.css'
 
 class App extends Component {
+  constructor(props) {
+    super(props)
+
+    this.state = {
+        isNavCollapsed : true
+    }
+}
+  handleNavCollapse = ()=> {
+    this.setState(prevState => ({
+      isNavCollapsed: !prevState.isNavCollapsed
+    }));
+  }
   render() {
     const OnlyAuthLinks = VisibleOnlyAuth(() =>
       <ul className="navbar-nav">
@@ -25,7 +37,7 @@ class App extends Component {
         <li className="nav-item">
           <a href="/driver" className="nav-link">Drive</a>
         </li>
-        <LogoutButtonContainer />
+        {/* <LogoutButtonContainer /> */}
       </ul>
     )
 
@@ -47,7 +59,7 @@ class App extends Component {
             <button className="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
               <span className="navbar-toggler-icon"></span>
             </button>
-            <div className="collapse navbar-collapse" id="navbarNav">
+            <div className={`${this.state.isNavCollapsed ? 'collapse' : ''} navbar-collapse`} id="navbarNav">
               <OnlyGuestLinks />
               <OnlyAuthLinks />
             </div>  

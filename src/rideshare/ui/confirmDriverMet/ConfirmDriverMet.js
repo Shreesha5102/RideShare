@@ -21,14 +21,16 @@ class ConfirmDriverMet extends Component {
 
   render() {
     return(
-      <form className="pure-form pure-form-stacked" onSubmit={this.handleSubmit.bind(this)}>
+      <form onSubmit={this.handleSubmit.bind(this)}>
         <fieldset>
-          <label htmlFor="name">GPS Location</label>
-          <input id="gps_location" type="text" value={this.state.gps_location} onChange={this.onGpsLocationChange.bind(this)} placeholder="GPS Location" />
-
-          <br />
-
-          <button type="submit" className="pure-button pure-button-primary">Confirm Driver Met</button>
+          <legend style={{"text-align":"center"}}>Confirm Location</legend>
+          <div className='mb-3'>
+            <label for="gps_name" className="form-label">GPS Location</label>
+            <input id="gps_location" className="form-control" type="text" value={this.state.gps_location} onChange={this.onGpsLocationChange.bind(this)} placeholder="GPS Location" />
+          </div>
+          <div className='mb-3'>
+            <button type="submit" className="btn btn-primary">Confirm Driver Met</button>
+          </div>
         </fieldset>
       </form>
     )
