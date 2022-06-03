@@ -32,9 +32,10 @@ class App extends Component {
     const OnlyGuestLinks = HiddenOnlyAuth(() =>
       <ul className="navbar-nav">
         <li className="nav-item">
-          <a href="/signup" className="nav-link">Sign Up</a>
+          <a href="/signup" className="navbar-brand">SIGN UP</a>
+          <a href="/signup" className="navbar-brand">LOGIN</a>
         </li>
-        <LoginButtonContainer />
+        {/* <LoginButtonContainer /> */}
       </ul>
     )
 
@@ -42,7 +43,7 @@ class App extends Component {
       <div className="App">
         <nav className="navbar navbar-expand-lg navbar-fixed-top">
           <div className="container-fluid">
-            <a className="navbar-brand" href="/">BMSCE RS</a>
+            <a id="bmsce" className="navbar-brand" href="/">BMSCE RS</a>
             <button className="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
               <span className="navbar-toggler-icon"></span>
             </button>
