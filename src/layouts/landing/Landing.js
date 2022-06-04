@@ -34,33 +34,33 @@ class Landing extends Component {
         <section className="page-section" id="services">
             <div className="container">
                 <div className="text-center">
-                    <h2 className="section-heading text-uppercase">Services</h2>
-                    <h3 className="section-subheading text-muted">Lorem ipsum dolor sit amet consectetur.</h3>
+                    <h3 className="section-heading text-uppercase">Services We offer</h3>
+                    <h3 className="section-subheading text-muted"></h3>
                 </div>
                 <div className="row text-center">
                     <div className="col-md-4">
                         <span className="fa-stack fa-4x">
                             <i className="fas fa-circle fa-stack-2x text-primary"></i>
-                            <i className="fas fa-shopping-cart fa-stack-1x fa-inverse"></i>
+                            <i className="fas fa-car fa-stack-1x fa-inverse"></i>
                         </span>
-                        <h4 className="my-3">E-Commerce</h4>
-                        <p className="text-muted">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Minima maxime quam architecto quo inventore harum ex magni, dicta impedit.</p>
+                        <h4 className="my-3">RideSharing</h4>
+                        <p className="text-muted">Empowering both drivers and riders with peer to peer ecosystem</p>
                     </div>
                     <div className="col-md-4">
                         <span className="fa-stack fa-4x">
                             <i className="fas fa-circle fa-stack-2x text-primary"></i>
-                            <i className="fas fa-laptop fa-stack-1x fa-inverse"></i>
+                            <i className="fas fa-cube fa-stack-1x fa-inverse"></i>
                         </span>
-                        <h4 className="my-3">Responsive Design</h4>
-                        <p className="text-muted">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Minima maxime quam architecto quo inventore harum ex magni, dicta impedit.</p>
+                        <h4 className="my-3">Blockchain</h4>
+                        <p className="text-muted">Blockchain enables riders via the decentralized network to communicate directly with drivers. </p>
                     </div>
                     <div className="col-md-4">
                         <span className="fa-stack fa-4x">
                             <i className="fas fa-circle fa-stack-2x text-primary"></i>
                             <i className="fas fa-lock fa-stack-1x fa-inverse"></i>
                         </span>
-                        <h4 className="my-3">Web Security</h4>
-                        <p className="text-muted">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Minima maxime quam architecto quo inventore harum ex magni, dicta impedit.</p>
+                        <h4 className="my-3">Safe Ride</h4>
+                        <p className="text-muted">Transactions are completed using Immuatble decentralised ledger and hash functions</p>
                     </div>
                 </div>
             </div>
@@ -74,48 +74,49 @@ class Landing extends Component {
 
         <div className='row'>
           <div className="col-sm-6">
-            <h2>Why Choose Us?</h2><br></br>
-            <h6>Ride sharing services have emerged as an alternative transportation service that allows people to use personal cars efficiently.We here by propose a Smart transport system by implementing peer to peer Decentralized Ride-Sharing Application based on smart contracts on the Ethereum Blockchain</h6><br></br>
+            <h3><b>Why Choose Us?</b></h3><br></br>
+            <h5>Ride sharing services have emerged as an alternative transportation service that allows people to use personal cars efficiently.We here by propose a Smart transport system by implementing peer to peer Decentralized Ride-Sharing Application based on smart contracts on the Ethereum Blockchain</h5><br></br>
             <div className="row gy-5 gx-4">
                         <div className="col-sm-6 wow fadeIn" data-wow-delay="0.1s">
                             <div className="d-flex align-items-center mb-3">
-                                <div className="flex-shrink-0 btn-square bg-primary me-3">
+                                <div className="flex-shrink-0 btn-square bg-success me-3">
                                     <i className="fa fa-check text-white"></i>
                                 </div>
-                                <h6 className="mb-0">Fully Licensed</h6>
+                                <h5 className="mb-0">Transparency</h5>
                             </div>
-                            <span>Magna sea eos sit dolor, ipsum amet ipsum lorem diam eos</span>
+                            
                         </div>
                         <div className="col-sm-6 wow fadeIn" data-wow-delay="0.2s">
                             <div className="d-flex align-items-center mb-3">
-                                <div className="flex-shrink-0 btn-square bg-primary me-3">
+                                <div className="flex-shrink-0 btn-square bg-success me-3">
                                     <i className="fa fa-check text-white"></i>
                                 </div>
-                                <h6 className="mb-0">Online Tracking</h6>
+                                <h5 className="mb-0">Data Protection</h5>
                             </div>
-                            <span>Magna sea eos sit dolor, ipsum amet ipsum lorem diam eos</span>
+                            
                         </div>
                         <div className="col-sm-6 wow fadeIn" data-wow-delay="0.3s">
                             <div className="d-flex align-items-center mb-3">
-                                <div className="flex-shrink-0 btn-square bg-primary me-3">
+                                <div className="flex-shrink-0 btn-square bg-success me-3">
                                     <i className="fa fa-check text-white"></i>
                                 </div>
-                                <h6 className="mb-0">Afordable Fee</h6>
+                                <h5 className="mb-0">Afordable Ride</h5>
                             </div>
-                            <span>Magna sea eos sit dolor, ipsum amet ipsum lorem diam eos</span>
+                            
                         </div>
                         <div className="col-sm-6 wow fadeIn" data-wow-delay="0.4s">
                             <div className="d-flex align-items-center mb-3">
-                                <div className="flex-shrink-0 btn-square bg-primary me-3">
+                                <div className="flex-shrink-0 btn-square bg-success me-3">
                                     <i className="fa fa-check text-white"></i>
                                 </div>
-                                <h6 className="mb-0">Best Trainers</h6>
+                                <h5 className="mb-0">Traceability</h5>
                             </div>
-                            <span>Magna sea eos sit dolor, ipsum amet ipsum lorem diam eos</span>
+                            
                         </div>
                     </div>
-            
-            <br></br><button className="btn btn-primary btn-lg">Get in Touch</button>
+
+                     <a href="https://docs.google.com/presentation/d/1GEk0WUQVV7MmEzW9SoIgHdv9bpIwM6PBS8u5RgCgunk/edit#slide=id.p">
+            <br></br><button className="btn btn-secondary btn-lg">Know More!!</button></a>
           </div>
 
 

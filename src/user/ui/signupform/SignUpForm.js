@@ -34,7 +34,7 @@ class SignUpForm extends Component {
 
           <br />
 
-          <button type="submit" className="pure-button pure-button-primary">Sign Up</button>
+          <button type="submit" className="btn btn-primary">Sign Up</button>
         </fieldset>
       </form>
     )

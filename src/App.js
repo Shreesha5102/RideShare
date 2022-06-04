@@ -37,7 +37,7 @@ class App extends Component {
         <li className="nav-item">
           <a href="/driver" className="nav-link">Drive</a>
         </li>
-        <li className="nav-item">
+        <li className='nav-item'>
           <LogoutButtonContainer />
         </li>
       </ul>
@@ -46,7 +46,7 @@ class App extends Component {
     const OnlyGuestLinks = HiddenOnlyAuth(() =>
       <ul className="navbar-nav">
         <li className="nav-item">
-          <a href="/signup" className="nav-link">Sign Up</a>
+          <a href="/signup" className="nav-link">SIGN UP</a>
         </li>
         <li className="nav-item">
           <LoginButtonContainer />
