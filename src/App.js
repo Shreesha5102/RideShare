@@ -37,7 +37,9 @@ class App extends Component {
         <li className="nav-item">
           <a href="/driver" className="nav-link">Drive</a>
         </li>
-        <LogoutButtonContainer />
+        <li className="nav-item">
+          <LogoutButtonContainer />
+        </li>
       </ul>
     )
 
@@ -46,7 +48,9 @@ class App extends Component {
         <li className="nav-item">
           <a href="/signup" className="nav-link">Sign Up</a>
         </li>
-        <LoginButtonContainer />
+        <li className="nav-item">
+          <LoginButtonContainer />
+        </li>
       </ul>
     )
 
@@ -54,7 +58,7 @@ class App extends Component {
       <div className="App">
         <nav className="navbar navbar-expand-lg navbar-fixed-top">
           <div className="container-fluid ">
-            <a className="navbar-brand" href="#" >BMSCE RS</a>
+            <span className="navbar-brand mb-0 h1" >BMSCE RS</span>
             <button className="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded={!this.state.isNavCollapsed ? true : false} aria-label="Toggle navigation" onClick={this.handleNavCollapse}>
               <span className="navbar-toggler-icon"></span>
             </button>

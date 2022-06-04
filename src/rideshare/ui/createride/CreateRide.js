@@ -49,9 +49,9 @@ class CreateRide extends Component {
 
     return(
       <div className="ride-container">
-        <div className="pure-g driver">
-          <div className="pure-u-1-3"></div>
-          <div className="pure-u-1-3">
+        <div className="row driver">
+          <div className="col"></div>
+          <div className="col">
           <form id="ride-form" onSubmit={this.handleSubmit.bind(this)}>
             <fieldset>
               <legend style={{"text-align":"center"}}>Create Ride</legend>
@@ -117,7 +117,7 @@ class CreateRide extends Component {
             </fieldset>
             </form> */}
           </div>
-          <div className="pure-u-1-3"></div>
+          <div className="col"></div>
         </div>
         
       </div>

@@ -145,8 +145,14 @@ class RideList extends Component {
                       </li>
                       <li className="list-group-item d-flex justify-content-between align-items-start">
                         <div className="ms-2 me-auto">
-                          <div className="fw-bold"></div>
+                          <div className="fw-bold">Ride State</div>
                           {this.rideshareButton(this.state.passengers[this.state.passengers.length-1].indexOf(web3.eth.accounts[0]) > -1, this.state.rideshares.at(-1)[1],this.state.rideshares.length-1)}
+                        </div>
+                      </li>
+                      <li className="list-group-item d-flex justify-content-between align-items-start">
+                        <div className="ms-2 me-auto">
+                          <div className="fw-bold">Ride State</div>
+                          <Link to={`/details/${this.state.rideshares.length-1}`}>Details</Link>
                         </div>
                       </li>
                     </ul>

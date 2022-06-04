@@ -109,8 +109,8 @@ class RideDetails extends Component {
 
         return(
           <main className="container">
-            <div className="pure-g">
-              <div className="pure-u-1-1">
+            <div className="row">
+              <div className="col text-center">
                 <p>You are a passenger</p>
 
                 <p>Current state: {passengerState}</p>
@@ -126,8 +126,8 @@ class RideDetails extends Component {
         } else {
           return(
             <main className="container">
-              <div className="pure-g">
-                <div className="pure-u-1-1">
+              <div className="row">
+                <div className="col text-center">
                   <p>You are a driver</p>
                   <p>Passenger States: </p>
 

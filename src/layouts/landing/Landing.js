@@ -1,15 +1,12 @@
 import React, { Component } from 'react';
-<<<<<<< HEAD
-//components
-import Carousel from "./Carousel";
-
-import img1 from "../../img/txt1.jpg";
-=======
 import '../../css/bootstrap.min.css'
 import '../../css/style.css'
 import img1 from "../../img/prop1.jpg";
->>>>>>> 7ddbb677573cfa899eebc3e88413b5a030198162
 import '../../App.css';
+
+// import LoginButtonContainer from '../../user/ui/loginbutton/LoginButtonContainer'
+// import LogoutButtonContainer from '../../user/ui/logoutbutton/LogoutButtonContainer'
+
 
 class Landing extends Component {
   constructor(props) {
@@ -19,23 +16,19 @@ class Landing extends Component {
   render() {
     return(
       <div className='container fluid'>
-<<<<<<< HEAD
-        <div className='row'>
-          <Carousel />
-        </div>
-        <div className='row'>
-=======
         <div className='row1'>
->>>>>>> 7ddbb677573cfa899eebc3e88413b5a030198162
           <div className="jumbotron text-center">
                 <h1>Welcome to Rideshare</h1>
                 <p className="splash-subhead">
                     Look for Rides around the World, and pay with your favorite Cryptocurreny <strong>"Ethereum"</strong>
                 </p>
-                <p>
-                <a href="/dashboard" className="btn btn-primary">login</a>
-                <a href="/signup" className="btn btn-primary">signup</a>
-            </p>
+                <p className='row'>
+                    <div className='col'></div>
+                    <div className='col-4' id="landform">
+                        <a href="/signup" className="btn btn-primary">signup</a>
+                    </div>
+                    <div className='col'></div>
+                </p>
           </div>
         </div>
         <section className="page-section" id="services">
@@ -80,20 +73,6 @@ class Landing extends Component {
         </p>
 
         <div className='row'>
-<<<<<<< HEAD
-          <div className="col-8">
-            <h2>About Company Page</h2><br></br>
-            <h4>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.</h4><br></br>
-            <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.</p>
-            <br></br><button className="btn btn-primary btn-lg">Get in Touch</button>
-          </div>
-          <div className="col-4">
-             <img src={img1} className='rounded' alt="no image"/>
-          </div>
-        </div>
-
-        <div className='row'>
-=======
           <div className="col-sm-6">
             <h2>Why Choose Us?</h2><br></br>
             <h6>Ride sharing services have emerged as an alternative transportation service that allows people to use personal cars efficiently.We here by propose a Smart transport system by implementing peer to peer Decentralized Ride-Sharing Application based on smart contracts on the Ethereum Blockchain</h6><br></br>
@@ -148,20 +127,16 @@ class Landing extends Component {
         
 
          <div className='row'>
->>>>>>> 7ddbb677573cfa899eebc3e88413b5a030198162
           <div className="about-section">
            <h1 id="contact-us">Contact US!</h1>
             <p>.</p>
            <p>Resize the browser window to see that this page is responsive by the way.</p>
           </div>
        </div>
-<<<<<<< HEAD
-=======
 
      
         
 
->>>>>>> 7ddbb677573cfa899eebc3e88413b5a030198162
     </div>
       
       

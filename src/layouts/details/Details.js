@@ -11,8 +11,8 @@ class Details extends Component {
     console.log(this.props);
     return(
       <main className="container">
-        <div className="pure-g">
-          <div className="pure-u-1-1">
+        <div className="row">
+          <div className="col">
             <RideDetails rideId={this.props.params.id}/>
           </div>
         </div>

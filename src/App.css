@@ -1,8 +1,17 @@
 /* PAGE */
 
+html, body, #root {
+  margin: 0;
+  width:100%;
+  height: 100%;
+}
+
 body,
 .pure-g [class*=pure-u] {
   font-family: 'Open Sans', sans-serif;
+  background-color: rgb(245, 240, 240);
+  width:100%;
+  height: 100%;
 }
 
 h1, h2, h3 {
@@ -24,6 +33,11 @@ code {
   margin: 2%;
 }
 
+#landform{
+  display: flex;
+  justify-content: space-around;
+  flex-direction: row;
+}
 
 .pure-form input[type="text"]:focus {
   border-color: #0c1a2b;
@@ -128,22 +142,15 @@ code {
 
 
 #ride-form {
- background-color: #760676; 
+ background-color: transparent; 
+ padding: 5px;
+ border: 2px solid;
+ border-radius: 25px;
 }
 #ride-form:hover {
   box-shadow: 5px 0px 40px rgba(0,0,0, .2);
 }
 
-<<<<<<< HEAD
-#dashboard {
-  margin-top: auto;
-}
-
-.app-main {
-  margin-top: 0;
-}
-
-=======
 .about-section {
   padding: 30px;
   background-color: #474e5d;
@@ -183,4 +190,3 @@ code {
 }
 
 
->>>>>>> 7ddbb677573cfa899eebc3e88413b5a030198162
