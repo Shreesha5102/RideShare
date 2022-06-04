@@ -26,14 +26,13 @@ class SignUpForm extends Component {
 
   render() {
     return(
-      <form className="pure-form pure-form-stacked" onSubmit={this.handleSubmit.bind(this)}>
+      <form onSubmit={this.handleSubmit.bind(this)}>
         <fieldset>
-          <label htmlFor="name">Name</label>
-          <input id="name" type="text" value={this.state.name} onChange={this.onInputChange.bind(this)} placeholder="Name" />
-          <span className="pure-form-message">This is a required field.</span>
+          <div className='mb-3'>
+            <label htmlFor="name" className='form-label'>Name</label>
+            <input id="name" type="text" className='form-control' value={this.state.name} onChange={this.onInputChange.bind(this)} placeholder="Name" required/>
 
-          <br />
-
+          </div>
           <button type="submit" className="btn btn-primary">Sign Up</button>
         </fieldset>
       </form>

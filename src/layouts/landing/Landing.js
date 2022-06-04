@@ -131,7 +131,7 @@ class Landing extends Component {
           <div className="about-section">
            <h1 id="contact-us">Contact US!</h1>
             <p>.</p>
-           <p>Resize the browser window to see that this page is responsive by the way.</p>
+           <p id="info">Developed by Shashank,Shreesha,Swaroop</p>
           </div>
        </div>
 
